@@ -1,0 +1,135 @@
+<!-- Crypt.html developed by Cedric#0591 -->
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head> <title>Crack</title> </head>
+
+<body> 
+<script> 
+window.onload = function WindowLoad(event) {
+	document.getElementById('text').value = "";
+}
+
+function crypt() {
+let text = document.getElementById('text');
+let str = text.value;
+let newstr = "";
+for (let i = 0; i < str.length; i++) {
+// Replace list
+if (str[i] == "a") {newstr += "122345"}
+if (str[i] == "b") {newstr += "ahbcdze"}
+if (str[i] == "c") {newstr += "678490"}
+if (str[i] == "d") {newstr += "fghij"}
+if (str[i] == "e") {newstr += "poopsies"}
+if (str[i] == "f") {newstr += "hahalala"}
+if (str[i] == "g") {newstr += "bzaha"}
+if (str[i] == "h") {newstr += "noobadooba"}
+if (str[i] == "i") {newstr += "swagers"}
+if (str[i] == "j") {newstr += "drag"}
+if (str[i] == "k") {newstr += "8888"}
+if (str[i] == "l") {newstr += "h71j"}
+if (str[i] == "m") {newstr += "91k25"}
+if (str[i] == "n") {newstr += "ajd8d"}
+if (str[i] == "o") {newstr += "benis"}
+if (str[i] == "p") {newstr += "bananananananahuuuueeee"}
+if (str[i] == "q") {newstr += "kabo"}
+if (str[i] == "r") {newstr += "fartop"}
+if (str[i] == "s") {newstr += "subwaeha"}
+if (str[i] == "t") {newstr += "tibo9"}
+if (str[i] == "u") {newstr += "jjah"}
+if (str[i] == "v") {newstr += "vabobooooo"}
+if (str[i] == "w") {newstr += "weeee"}
+if (str[i] == "x") {newstr += "sessyboii"}
+if (str[i] == "y") {newstr += "uhamqziwhdy"}
+if (str[i] == "z") {newstr += "kduwge"}
+
+if (str[i] == " ") {newstr += "ggez"}
+if (str[i] == ".") {newstr += "bindddd"}
+if (str[i] == "!") {newstr += "666"}
+if (str[i] == "?") {newstr += "gob"}
+if (str[i] == "/") {newstr += "819200"}
+if (str[i] == ":") {newstr += "stupid"}
+if (str[i] == ",") {newstr += "oquwbfi"}
+if (str[i] == "'") {newstr += "ragagadadaoqoqo9992"}
+if (str[i] == ";") {newstr += "yeszbroo"}
+if (str[i] == "å") {newstr += "yenisfegis"}
+if (str[i] == "ä") {newstr += "dusuger"}
+if (str[i] == "ö") {newstr += "mannensluta"}
+if (str[i] == "(") {newstr += "abobbo"}
+if (str[i] == ")") {newstr += "linsusgay"}
+
+//
+}
+newstr = "\"" + text.value.trim() + "\": <font style = color:red>" + newstr + "</font>";
+text.value = "";
+let con = document.getElementById('console'); con.innerHTML = ('<br />'+newstr) + con.innerHTML;
+
+}
+
+
+function crack() {
+let text = document.getElementById('text');
+let str = text.value;
+let newstr = "";
+// Replace list
+str = str.replaceAll("122345", "a");
+str = str.replaceAll("ahbcdze", "b");
+str = str.replaceAll("678490", "c");
+str = str.replaceAll("fghij", "d");
+str = str.replaceAll("poopsies", "e");
+str = str.replaceAll("hahalala", "f");
+str = str.replaceAll("bzaha", "g");
+str = str.replaceAll("noobadooba", "h");
+str = str.replaceAll("swagers", "i");
+str = str.replaceAll("drag", "j");
+str = str.replaceAll("8888", "k");
+str = str.replaceAll("h71j", "l");
+str = str.replaceAll("91k25", "m");
+str = str.replaceAll("ajd8d", "n");
+str = str.replaceAll("benis", "o");
+str = str.replaceAll("bananananananahuuuueeee", "p");
+str = str.replaceAll("kabo", "q");
+str = str.replaceAll("fartop", "r");
+str = str.replaceAll("subwaeha", "s");
+str = str.replaceAll("tibo9", "t");
+str = str.replaceAll("jjah", "u");
+str = str.replaceAll("vabobooooo", "v");
+str = str.replaceAll("weeee", "w");
+str = str.replaceAll("sessyboii", "x");
+str = str.replaceAll("uhamqziwhdy", "y");
+str = str.replaceAll("kduwge", "z");
+
+str = str.replaceAll("ggez", " ");
+str = str.replaceAll("bindddd", ".");
+str = str.replaceAll("666", "!");
+str = str.replaceAll("gob", "?");
+str = str.replaceAll("819200", "/");
+str = str.replaceAll("stupid", ":");
+str = str.replaceAll("oquwbfi", ",");
+str = str.replaceAll("ragagadadaoqoqo9992", "'");
+str = str.replaceAll("yeszbroo", ";");
+str = str.replaceAll("yenisfegis", "å");
+str = str.replaceAll("dusuger", "ä");
+str = str.replaceAll("mannensluta", "ö");
+str = str.replaceAll("abobbo", "(");
+str = str.replaceAll("linsusgay", ")");
+
+str = "\"" + text.value.trim() + "\": <font style = color:green>" + str + "</font>";
+text.value = "";
+let con = document.getElementById('console'); con.innerHTML = ('<br />'+str) + con.innerHTML;
+
+}
+
+</script>
+
+<button onclick = "crypt();", style = color:red>Crypt</button>
+<button onclick = "crack();", style = color:green>Crack</button>
+<textarea id = "text", style = "width:100%; height:25px;"> </textarea>
+<div id = "console" />
+
+</body>
+
+
+</html>
